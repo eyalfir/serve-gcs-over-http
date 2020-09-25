@@ -13,4 +13,4 @@ FROM alpine:latest
 
 WORKDIR /app
 COPY --from=builder /build/gcs-proxy /app/gcs-proxy
-CMD gcs-proxy
+CMD ./gcs-proxy
